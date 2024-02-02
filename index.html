@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <style>
+        body{
+            position: relative;
+            margin: 40px auto;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1.head{
+            font-size: 50px;
+            border: 1px ;
+            border-radius: 5px;
+            position: relative;
+            background-color: #c15c0e;
+        }
+        input{
+            border:1px solid #c15c0e;
+            height: 30px;
+            width: 150px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button{
+            margin-top: 20px;
+            border: 1px;
+            border-radius: 4px;
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
+            background-color: #c15c0e;
+            color: #ededed;
+            transition: .2s;
+        }
+        button:hover{
+            color: #c15c0e;
+            background-color: #ededed;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="head">To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task"><br>
+    <button onclick="addTask()">Add Task</button>
+
+    <!-- div for listing tasks -->
+    <ul id="taskList"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
